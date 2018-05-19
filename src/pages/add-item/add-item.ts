@@ -36,5 +36,4 @@ export class AddItemPage {
     this.view.dismiss();
   }
 
-
 }

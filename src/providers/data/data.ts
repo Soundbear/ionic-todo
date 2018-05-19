@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class Data {
 
   constructor(public storage: Storage) {
-    
+
   }
 
   getData() {
@@ -15,6 +15,10 @@ export class Data {
 
   save(data){
     this.storage.set('todos', data);
+  }
+
+  delete() {
+    this.storage.remove('todos');
   }
 
 }
